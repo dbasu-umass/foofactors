@@ -65,3 +65,13 @@ The `fcount()` function returns a frequency table as a tibble with a column of f
 ```{r}
 fcount(x)
 ```
+
+The `fcommon()` function tests whether elements of one vector of factors occur in a second vector of factors. The function returns a vector with length equal to the first vector. Each element of the returned vector is TRUE/FALSE, indicating whehter that element of the first vector of factors occurs in the second.
+
+```{r}
+x <- c("A","B")
+y <- c("A","C","D")
+fcommon(x,y)
+fcommon(y,x)
+```
+

@@ -77,3 +77,18 @@ fcount(x)
 #> 4 b        19
 #> 5 e        19
 ```
+
+The `fcommon()` function tests whether elements of one vector of factors
+occur in a second vector of factors. The function returns a vector with
+length equal to the first vector. Each element of the returned vector is
+TRUE/FALSE, indicating whehter that element of the first vector of
+factors occurs in the second.
+
+``` r
+x <- c("A","B")
+y <- c("A","C","D")
+fcommon(x,y)
+#> [1]  TRUE FALSE
+fcommon(y,x)
+#> [1]  TRUE FALSE FALSE
+```
